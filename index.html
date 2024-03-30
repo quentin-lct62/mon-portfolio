@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
 
+<!-- Navbar -->
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
@@ -48,9 +48,6 @@
     <div class="col-md-12">
       <h2 class="mb-4">À propos de moi</h2>
       <p class="lead">Je suis un développeur web passionné par la création de sites web et d'applications innovantes. Avec plusieurs années d'expérience dans le développement front-end et back-end, je suis capable de concevoir et de réaliser des projets web de haute qualité. Ma passion pour la programmation me pousse constamment à apprendre de nouvelles technologies et à améliorer mes compétences. En dehors du développement web, j'aime aussi la musique, les voyages et les activités en plein air.</p>
-    </div>
-    <div class="col-md-6">
-      <!-- Ajoutez ici une image de vous-même -->
     </div>
   </div>
 </section>
@@ -93,37 +90,57 @@
 <!-- Projects Section -->
 <section id="projects" class="container py-5">
   <h2 class="text-center mb-5">Projets</h2>
+
+  <!-- Boutons de filtrage -->
+  <div id="filter-buttons" class="text-center mb-4">
+    <button class="btn btn-secondary filter-button" data-filter="all">Tous</button>
+    <button class="btn btn-secondary filter-button" data-filter="web-design">Web Design</button>
+    <button class="btn btn-secondary filter-button" data-filter="web-development">Développement Web</button>
+    <!-- Ajoutez d'autres boutons pour d'autres catégories ou technologies -->
+  </div>
+
   <div class="row">
-    <div class="col-md-4 mb-4">
+    <div class="col-md-3 mb-4 project" data-categories="web-design">
       <div class="card">
         <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 1">
         <div class="card-body">
-          <h5 class="card-title">Project 1</h5>
+          <h5 class="card-title">Design</h5>
           <p class="card-text">Description du projet.</p>
           <a href="#" class="btn btn-primary">Voir plus</a>
         </div>
       </div>
     </div>
-    <div class="col-md-4 mb-4">
+    <div class="col-md-3 mb-4 project" data-categories="web-development">
       <div class="card">
         <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 2">
         <div class="card-body">
-          <h5 class="card-title">Project 2</h5>
+          <h5 class="card-title">Development Web</h5>
           <p class="card-text">Description du projet.</p>
           <a href="#" class="btn btn-primary">Voir plus</a>
         </div>
       </div>
     </div>
-    <div class="col-md-4 mb-4">
+    <div class="col-md-3 mb-4 project" data-categories="web-design">
       <div class="card">
-        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 3">
+        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 2">
         <div class="card-body">
-          <h5 class="card-title">Project 3</h5>
+          <h5 class="card-title">Design </h5>
           <p class="card-text">Description du projet.</p>
           <a href="#" class="btn btn-primary">Voir plus</a>
         </div>
       </div>
     </div>
+    <div class="col-md-3 mb-4 project" data-categories="web-development">
+      <div class="card">
+        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 2">
+        <div class="card-body">
+          <h5 class="card-title">Development Web</h5>
+          <p class="card-text">Description du projet.</p>
+          <a href="#" class="btn btn-primary">Voir plus</a>
+        </div>
+      </div>
+    </div>
+    <!-- Ajoutez d'autres éléments de projet avec les classes "col-md-4 mb-4 project" et les attributs de données appropriés -->
   </div>
 </section>
 
@@ -165,8 +182,7 @@
 </footer>
 
 <!-- Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="/script/script.js"></script>
 

@@ -7,10 +7,13 @@
 .navbar-brand {
   font-size: 1.5rem;
 }
-
-.about-img {
-  max-width: 100%;
-  height: auto;
+.progress-bar{
+background-color: #005f8c;
 }
+.btn-primary{
+  background-color: #005f8c;
 
-
+}
+.btn-primary:hover {
+  background-color: #0078a0; /* Couleur légèrement plus claire */
+}
