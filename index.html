@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Mon Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">À propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="hero d-flex align-items-center justify-content-center text-center">
+  <div class="container">
+    <img src="/images/photo.jpg" alt="Votre Photo" class="img-fluid rounded-circle mb-4" style="width: 300px;">
+    <h1 class="display-4 mb-4">Bienvenue sur Mon Portfolio</h1>
+    <p class="lead">Découvrez mes réalisations et n'hésitez pas à me contacter.</p>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-12">
+      <h2 class="mb-4">À propos de moi</h2>
+      <p class="lead">Je suis un développeur web passionné par la création de sites web et d'applications innovantes. Avec plusieurs années d'expérience dans le développement front-end et back-end, je suis capable de concevoir et de réaliser des projets web de haute qualité. Ma passion pour la programmation me pousse constamment à apprendre de nouvelles technologies et à améliorer mes compétences. En dehors du développement web, j'aime aussi la musique, les voyages et les activités en plein air.</p>
+    </div>
+    <div class="col-md-6">
+      <!-- Ajoutez ici une image de vous-même -->
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Compétences</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>HTML</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h5>CSS</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>JAVASCRIPT</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">50%</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h5>REACT</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">40%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="container py-5">
+  <h2 class="text-center mb-5">Projets</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 1">
+        <div class="card-body">
+          <h5 class="card-title">Project 1</h5>
+          <p class="card-text">Description du projet.</p>
+          <a href="#" class="btn btn-primary">Voir plus</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 2">
+        <div class="card-body">
+          <h5 class="card-title">Project 2</h5>
+          <p class="card-text">Description du projet.</p>
+          <a href="#" class="btn btn-primary">Voir plus</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 3">
+        <div class="card-body">
+          <h5 class="card-title">Project 3</h5>
+          <p class="card-text">Description du projet.</p>
+          <a href="#" class="btn btn-primary">Voir plus</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container py-5">
+  <h2 class="text-center mb-5">Contactez-moi</h2>
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <form action="http://localhost:3000/submit-form" method="POST">
+        <div class="mb-3">
+            <label for="name" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Téléphone</label>
+            <input type="tel" class="form-control" id="phone" name="phone">
+        </div>
+        <div class="mb-3">
+            <label for="subject" class="form-label">Objet</label>
+            <input type="text" class="form-control" id="subject" name="subject">
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+    </form>       
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+  <p>Copyright &copy; 2024 | Mon Portfolio</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="/script/script.js"></script>
+
+<script>
+
+    ScrollReveal().reveal('#about', {
+        duration: 1000,
+        origin: 'left',
+        distance: '50px',
+        delay: 300
+    });
+    ScrollReveal().reveal('#skills', {
+        duration: 1000,
+        origin: 'bottom',
+        distance: '50px',
+        delay: 300
+    });
+    ScrollReveal().reveal('#projects', {
+        duration: 1000,
+        origin: 'right',
+        distance: '50px',
+        delay: 300
+    });
+    ScrollReveal().reveal('#contact', {
+        duration: 1000,
+        origin: 'bottom',
+        distance: '50px',
+        delay: 300
+    });
+</script>
+</body>
+</html>

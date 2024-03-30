@@ -1,0 +1,16 @@
+.hero {
+  height: 100vh;
+  background-color: #005f8c;
+  color: #fff;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.about-img {
+  max-width: 100%;
+  height: auto;
+}
+
+
