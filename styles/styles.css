@@ -1,0 +1,19 @@
+.hero {
+  height: 100vh;
+  background-color: #005f8c;
+  color: #fff;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+.progress-bar{
+background-color: #005f8c;
+}
+.btn-primary{
+  background-color: #005f8c;
+
+}
+.btn-primary:hover {
+  background-color: #0078a0; /* Couleur légèrement plus claire */
+}
